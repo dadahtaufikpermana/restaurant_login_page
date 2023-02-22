@@ -20,27 +20,26 @@ class LoginPage extends StatelessWidget {
                 height: 400,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/images/rectangle.png'),
+                        image: AssetImage('assets/image/rectangle_3.png'),
                         fit: BoxFit.fill
                     )
                 ),
                 child: Stack(
                   children: <Widget>[
-                    Positioned(
-                      left: 30,
-                      width: 80,
-                      height: 200,
-                        child: Container(
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/images/bella_logo.png')
-                            )
+                    Center(
+                      child: Positioned(
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/bella_logo.png')
+                              )
+                            ),
                           ),
-                        ),
+                      ),
                     ),
                     Positioned(
                       child: Container(
-                        margin: const EdgeInsets.only(top: 200),
+                        margin: const EdgeInsets.only(top: 330),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
