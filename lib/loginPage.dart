@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
                             Text("Login", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),),
-                            Text("Register", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),)
+                            Text("Sign-Up", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),)
                           ],
                           // children: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
                         ),
@@ -100,6 +100,17 @@ class LoginPage extends StatelessWidget {
                             ),
                           )
                         ],
+                      ),
+                    ),
+                    const SizedBox(height: 30,),
+                    Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.red
+                      ),
+                      child: const Center(
+                        child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
                       ),
                     )
                   ],
