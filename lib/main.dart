@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/history.dart';
 import 'package:restaurant_login_page/loginPage.dart';
+import 'package:restaurant_login_page/network.dart';
+import 'package:restaurant_login_page/orders.dart';
+import 'package:restaurant_login_page/search.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
       ),
-      home: const LoginPage(),
+      home: const Search(),
     );
   }
 }
