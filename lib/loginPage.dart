@@ -1,40 +1,39 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage ({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: const Text("Restaurant Application",style: TextStyle(color: Colors.black),),
+        title: const Text(
+          "Restaurant Application",
+          style: TextStyle(color: Colors.black),
+        ),
         backgroundColor: Colors.white,
-
       ),
       body: SingleChildScrollView(
         child: Container(
           child: Column(
-            children: <Widget> [
+            children: <Widget>[
               Container(
                 height: 400,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/image/rectangle_3.png'),
-                        fit: BoxFit.fill
-                    )
-                ),
+                        fit: BoxFit.fill)),
                 child: Stack(
                   children: <Widget>[
                     Center(
                       child: Positioned(
-                          child: Container(
-                            decoration: const BoxDecoration(
+                        child: Container(
+                          decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage('assets/image/bella_logo.png')
-                              )
-                            ),
-                          ),
+                                  image: AssetImage(
+                                      'assets/image/bella_logo.png'))),
+                        ),
                       ),
                     ),
                     Positioned(
@@ -43,8 +42,20 @@ class LoginPage extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
-                            Text("Login", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),),
-                            Text("Sign-Up", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),)
+                            Text(
+                              "Login",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "Sign-Up",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )
                           ],
                           // children: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
                         ),
@@ -66,24 +77,20 @@ class LoginPage extends StatelessWidget {
                             BoxShadow(
                                 color: Color.fromRGBO(143, 148, 251, .2),
                                 blurRadius: 20.0,
-                                offset: Offset(0, 10)
-                            )
-                          ]
-                      ),
+                                offset: Offset(0, 10))
+                          ]),
                       child: Column(
                         children: <Widget>[
                           Container(
                             padding: const EdgeInsets.all(8.0),
                             decoration: const BoxDecoration(
-                                border: Border(bottom: BorderSide(color: Colors.grey))
-                            ),
-
+                                border: Border(
+                                    bottom: BorderSide(color: Colors.grey))),
                             child: const TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Email or Phone number",
-                                  hintStyle: TextStyle(color: Colors.white)
-                              ),
+                                  hintStyle: TextStyle(color: Colors.white)),
                             ),
                           ),
                           Container(
@@ -95,22 +102,26 @@ class LoginPage extends StatelessWidget {
                               decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Password",
-                                  hintStyle: TextStyle(color: Colors.white)
-                              ),
+                                  hintStyle: TextStyle(color: Colors.white)),
                             ),
                           )
                         ],
                       ),
                     ),
-                    const SizedBox(height: 30,),
+                    const SizedBox(
+                      height: 30,
+                    ),
                     Container(
                       height: 50,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.red
-                      ),
+                          color: Colors.red),
                       child: const Center(
-                        child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                        child: Text(
+                          "Login",
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     )
                   ],
@@ -120,9 +131,6 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-
-
     );
   }
-
 }
