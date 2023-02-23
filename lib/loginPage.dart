@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage ({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,8 +38,20 @@ class LoginPage extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
-                            Text("Login", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),),
-                            Text("Sign-Up", style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),)
+                            Text(
+                              "Login",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "Sign-Up",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            )
                           ],
                           // children: Text("Login", style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),),
                         ),
@@ -61,10 +73,8 @@ class LoginPage extends StatelessWidget {
                             BoxShadow(
                                 color: Color.fromRGBO(143, 148, 251, .2),
                                 blurRadius: 20.0,
-                                offset: Offset(0, 10)
-                            )
-                          ]
-                      ),
+                                offset: Offset(0, 10))
+                          ]),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -76,9 +86,8 @@ class LoginPage extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.all(8.0),
                             decoration: const BoxDecoration(
-                                border: Border(bottom: BorderSide(color: Colors.grey))
-                            ),
-
+                                border: Border(
+                                    bottom: BorderSide(color: Colors.grey))),
                             child: const TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none,
@@ -127,8 +136,7 @@ class LoginPage extends StatelessWidget {
                       height: 50,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.red
-                      ),
+                          color: Colors.red),
                       child: const Center(
                         child: Text(
                           "Login",
