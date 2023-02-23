@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
                           child: Container(
                             decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage('assets/image/bella_logo.png')
+                                image: AssetImage('assets/image/ic_bella_logo.png')
                               )
                             ),
                           ),

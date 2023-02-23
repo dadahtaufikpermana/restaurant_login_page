@@ -54,12 +54,14 @@ dev_dependencies:
 flutter:
   assets:
     - assets/image/
-  #    - assets/image/rectangle_3.png
-  #    - assets/image/basket.png
-  #    - assets/image/network.png
-  #    - assets/image/note.png
-  #    - assets/image/search.png
-  #    - assets/image/vector.png
+  #    - assets/image/ic_rectangle3.png
+  #    - assets/image/ic_basket.png
+  #    - assets/image/ic_connection.png
+  #    - assets/image/ic_note.png
+  #    - assets/image/ic_search.png
+  #    - assets/image/ic_bella_logo.png
+  #    - assets/image/ic_salad.svg
+  #    - assets/image/ic_rectangle9.svg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

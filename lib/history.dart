@@ -31,7 +31,7 @@ class History extends StatelessWidget {
               height: 200,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/image/note.png'))),
+                      image: AssetImage('assets/image/ic_note.png'))),
             ),
             Container(
                 padding: const EdgeInsets.only(top: 5),
