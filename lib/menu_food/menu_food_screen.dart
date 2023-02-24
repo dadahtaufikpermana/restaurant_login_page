@@ -9,8 +9,8 @@ class Menu_food_screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        leading: const BackButton(
-          color: Colors.black,
+        leading: GestureDetector(
+          child: Icon( Icons.arrow_back_ios, color: Colors.black,  ),
         ),
         backgroundColor: Colors.white,
         title: Container(
