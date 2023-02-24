@@ -50,14 +50,38 @@ class Menu_food_screen extends StatelessWidget {
                   crossAxisCount: 2,
                   mainAxisSpacing: 50,
                 children: [
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
-                  FoodCard(),
+                  FoodCard(
+                    title: "Veggoe\nTomatto Mix",
+                    imageFood: 'assets/image/ic_food.png',
+                  ),
+                  FoodCard(
+                    title: "Egg and\nCucumber..",
+                    imageFood: 'assets/image/ic_food3.png',
+                  ),
+                  FoodCard(
+                    title: "Fried\nChicken m.",
+                    imageFood: 'assets/image/ic_food4.png',
+                  ),
+                  FoodCard(
+                    title: "Moi-moi\nand Ekpa",
+                    imageFood: 'assets/image/ic_food5.png',
+                  ),
+                  FoodCard(
+                    title: "Bakpau",
+                    imageFood: 'assets/image/ic_food5.png',
+                  ),
+                  FoodCard(
+                    title: "chuankie",
+                    imageFood: 'assets/image/ic_food5.png',
+                  ),
+                  FoodCard(
+                    title: "Veggoe\nTomatto Mix",
+                    imageFood: 'assets/image/ic_food.png',
+                  ),
+                  FoodCard(
+                    title: "Egg and\nCucumber..",
+                    imageFood: 'assets/image/ic_food3.png',
+                  ),
                 ],
               ),
             ),

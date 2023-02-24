@@ -2,7 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FoodCard extends StatelessWidget {
-  const FoodCard({Key? key}) : super(key: key);
+  const FoodCard({
+    Key? key,
+    required this.title, required this.imageFood}) : super(key: key);
+  final String title;
+  final String imageFood;
 
   @override
   Widget build(BuildContext context) {
@@ -23,23 +27,28 @@ class FoodCard extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 70.0),
                   child: Column(
                     children: [
-                      Text(
-                        "Veggie\nTomatto Mix",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                      Container(
+                        child: Text(
+                            title,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
+
                       ),
-                      Text(
-                        "N1,900",
-                        style: TextStyle(
-                            fontSize: 17,
-                            color: Colors.red,
-                            fontWeight: FontWeight.bold
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Text(
+                          "N1,900",
+                          style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.red,
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       )
                     ],
                   ),
@@ -53,8 +62,7 @@ class FoodCard extends StatelessWidget {
                   height: 100,
                   width: 100,
                   child: CircleAvatar(
-                    backgroundImage:
-                    AssetImage('assets/image/ic_food.png'),
+                    backgroundImage: AssetImage('${imageFood}'),
                   ),
                 ))
           ],
