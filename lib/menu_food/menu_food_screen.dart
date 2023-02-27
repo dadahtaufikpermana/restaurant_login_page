@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_login_page/menu_food/food_card_widget.dart';
 
-class Menu_food_screen extends StatelessWidget {
-  const Menu_food_screen({Key? key}) : super(key: key);
+class MenuFoodScreen extends StatelessWidget {
+  const MenuFoodScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +15,10 @@ class Menu_food_screen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Container(
           padding: const EdgeInsets.all(8),
-          child: Form(
               child: TextFormField(
             decoration:
                 const InputDecoration(border: InputBorder.none, hintText: ""),
-          )),
+          ),
         ),
       ),
       body: SingleChildScrollView(

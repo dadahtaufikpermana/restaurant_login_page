@@ -47,15 +47,17 @@ class FoodCard extends StatelessWidget {
                         ),
 
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: Text(
-                          "N1,900",
-                          style: TextStyle(
-                              fontSize: 17,
-                              color: Colors.red,
-                              fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 10),
+                          child: Text(
+                            "N1,900",
+                            style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       )
                     ],

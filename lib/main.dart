@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: const Menu_food_screen(),
+      home: const MenuFoodScreen(),
     );
   }
 }

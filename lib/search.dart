@@ -16,7 +16,7 @@ class Search extends StatelessWidget {
           child: Form(
               child: TextFormField(
             decoration:
-                const InputDecoration(border: InputBorder.none, hintText: ""),
+                const InputDecoration(border: InputBorder.none,),
           )),
         ),
       ),
