@@ -4,6 +4,7 @@ import 'package:restaurant_login_page/loginPage.dart';
 import 'package:restaurant_login_page/menu_food/menu_food_screen.dart';
 import 'package:restaurant_login_page/network.dart';
 import 'package:restaurant_login_page/orders.dart';
+import 'package:restaurant_login_page/screens/splash_screen.dart';
 import 'package:restaurant_login_page/search.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: const MenuFoodScreen(),
+      home: const SplashScreen(),
     );
   }
 }
