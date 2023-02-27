@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_login_page/history.dart';
 import 'package:restaurant_login_page/loginPage.dart';
+import 'package:restaurant_login_page/menu_food/menu_food_screen.dart';
 import 'package:restaurant_login_page/network.dart';
 import 'package:restaurant_login_page/orders.dart';
 import 'package:restaurant_login_page/search.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home: const Search(),
+      home: const MenuFoodScreen(),
     );
   }
 }

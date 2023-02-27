@@ -7,33 +7,29 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      appBar: AppBar(
-        title: const Text(
-          "Restaurant Application",
-          style: TextStyle(color: Colors.black),
-        ),
-        backgroundColor: Colors.white,
-      ),
       body: SingleChildScrollView(
         child: Container(
           child: Column(
-            children: <Widget>[
+            children: <Widget> [
               Container(
                 height: 400,
                 decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/image/rectangle_3.png'),
-                        fit: BoxFit.fill)),
+                        fit: BoxFit.fill
+                    )
+                ),
                 child: Stack(
                   children: <Widget>[
                     Center(
                       child: Positioned(
-                        child: Container(
-                          decoration: const BoxDecoration(
+                          child: Container(
+                            decoration: const BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(
-                                      'assets/image/bella_logo.png'))),
-                        ),
+                                image: AssetImage('assets/image/ic_bella_logo.png')
+                              )
+                            ),
+                          ),
                       ),
                     ),
                     Positioned(
@@ -71,7 +67,7 @@ class LoginPage extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.grey,
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: const [
                             BoxShadow(
@@ -80,7 +76,13 @@ class LoginPage extends StatelessWidget {
                                 offset: Offset(0, 10))
                           ]),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
+                          const Text("Email address",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.black26)),
                           Container(
                             padding: const EdgeInsets.all(8.0),
                             decoration: const BoxDecoration(
@@ -89,10 +91,16 @@ class LoginPage extends StatelessWidget {
                             child: const TextField(
                               decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  hintText: "Email or Phone number",
-                                  hintStyle: TextStyle(color: Colors.white)),
+
+                                  hintText: "E-Mail",
+                                  hintStyle: TextStyle(color: Colors.black, decoration: TextDecoration.underline)),
                             ),
                           ),
+                          const Text("Email address",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  color: Colors.black26)),
                           Container(
                             padding: const EdgeInsets.all(8.0),
                             child: const TextField(
@@ -102,11 +110,24 @@ class LoginPage extends StatelessWidget {
                               decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Password",
-                                  hintStyle: TextStyle(color: Colors.white)),
+                                  hintStyle: TextStyle(color: Colors.black)),
                             ),
                           )
                         ],
                       ),
+                    ),
+                    const Padding(padding: EdgeInsets.only(left: 8.0)),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      style: TextButton.styleFrom(
+                        foregroundColor: const Color.fromARGB(255, 250, 74, 12),
+                      ),
+                      child: const Text("Forgot passcode?",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 17)),
                     ),
                     const SizedBox(
                       height: 30,

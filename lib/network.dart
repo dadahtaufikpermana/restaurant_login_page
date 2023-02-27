@@ -17,7 +17,7 @@ class Network extends StatelessWidget {
               height: 200,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/image/network.png'))),
+                      image: AssetImage('assets/image/ic.connection.png'))),
             ),
             Container(
                 padding: const EdgeInsets.only(top: 5),
