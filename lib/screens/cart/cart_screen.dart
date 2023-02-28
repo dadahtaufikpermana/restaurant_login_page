@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:restaurant_login_page/screens/checkout_screen.dart';
+import 'package:restaurant_login_page/utilities/cta_button_widget.dart';
 
 import '../../utilities/styleSchema.dart';
 
@@ -39,41 +41,54 @@ class CartScreen extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: ListView.builder(
-          itemCount: models.length,
-          itemBuilder: ((context, index) {
-            final model = models[index];
-            return Slidable(
-              // Specify a key if the Slidable is dismissible.
-              key: ValueKey(0),
-              // The end action pane is the one at the right or the bottom side.
-              endActionPane: ActionPane(
-                motion: ScrollMotion(),
-                children: [
-                  CustomSlidableAction(
-                      padding: EdgeInsets.only(left: 15),
-                      onPressed: ((context) {}),
-                      child: CircleAvatar(
-                        radius: 26,
-                        backgroundColor: deepOrange800,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.favorite),
-                          color: Colors.white,
-                        ),
-                      )),
-                  CustomSlidableAction(
-                      padding: EdgeInsets.only(right: 30),
-                      onPressed: ((context) {}),
-                      child: CircleAvatar(
-                        radius: 26,
-                        backgroundColor: deepOrange800,
-                      )),
-                ],
-              ),
-              child: buildListTile(model),
-            );
-          })),
+      body: Column(
+        children: [Expanded(
+          child: ListView.builder(
+              itemCount: models.length,
+              itemBuilder: ((context, index) {
+                final model = models[index];
+                return Column(
+                  children: [
+                    Slidable(
+                      // Specify a key if the Slidable is dismissible.
+                      key: ValueKey(0),
+                      // The end action pane is the one at the right or the bottom side.
+                      endActionPane: ActionPane(
+                        motion: ScrollMotion(),
+                        children: [
+                          CustomSlidableAction(
+                              padding: EdgeInsets.only(left: 15),
+                              onPressed: ((context) {}),
+                              child: CircleAvatar(
+                                radius: 26,
+                                backgroundColor: deepOrange800,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.favorite),
+                                  color: Colors.white,
+                                ),
+                              )),
+                          CustomSlidableAction(
+                              padding: EdgeInsets.only(right: 30),
+                              onPressed: ((context) {}),
+                              child: CircleAvatar(
+                                radius: 26,
+                                backgroundColor: deepOrange800,
+                              )),
+
+                        ],
+                      ),
+                      child: buildListTile(model),
+                    ),
+
+                  ],
+                );
+              })),
+        ),
+          Ctabutton(textTitle: 'Complete Order', screen: CheckoutScreen())
+        ],
+
+      )
     );
   }
 

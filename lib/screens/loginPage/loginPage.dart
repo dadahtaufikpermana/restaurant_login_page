@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_login_page/menu_food/menu_food_screen.dart';
+import 'package:restaurant_login_page/screens/home_screen.dart';
 
 import '../../utilities/button_widget.dart';
+import '../../utilities/styleSchema.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -68,25 +70,41 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 50,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        InkWell(
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return MenuFoodScreen();
-                              },
-                            ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return HomeScreen();
+                            },
+                          ),
+                        );
+                      },
+                      child: Center(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 100,
+                            vertical: 25,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50.0),
+                            color: deepOrange800,
+                          ),
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),
                           ),
                         ),
-                        Flexible(child: ButtonWidget(textTitle: "Login",))
+                      ),
+                    )
+
                       ],
                     ),
-                  ],
                 ),
               ),
-            ),
           ],
         ),
       ),

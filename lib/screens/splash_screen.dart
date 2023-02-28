@@ -26,7 +26,7 @@ class SplashScreen extends StatelessWidget {
               backgroundColor: Colors.white,
               radius: 40,
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/image/ic_logo1.png'),
+                backgroundImage: AssetImage('assets/image/ic_bella_logo.png'),
                 backgroundColor: Colors.white,
                 radius: 20,
               ),

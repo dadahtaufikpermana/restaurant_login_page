@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_login_page/menu_food/food_card_widget.dart';
+import 'package:restaurant_login_page/screens/detail_product_screen.dart';
 
 class MenuFoodScreen extends StatelessWidget {
   const MenuFoodScreen({Key? key}) : super(key: key);

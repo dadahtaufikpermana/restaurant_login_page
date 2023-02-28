@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/screens/cart/cart_screen.dart';
 
 class Ctabutton extends StatelessWidget {
+  final Widget screen;
   const Ctabutton({
+
     Key? key,
-    required this.textTitle,
+    required this.textTitle, required this.screen,
   }) : super(key: key);
   final String textTitle;
 
@@ -26,7 +29,15 @@ class Ctabutton extends StatelessWidget {
                   padding: const EdgeInsets.all(4),
                   textStyle: const TextStyle(fontSize: 16),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return screen;
+                        },
+                      ),
+                    );
+                },
                 child: Text(
                   textTitle,
                   style: const TextStyle(

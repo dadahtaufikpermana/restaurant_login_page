@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/screens/payment_screen.dart';
 
 import '../utilities/styleSchema.dart';
 
@@ -276,7 +277,15 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 40),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return PaymentScreen();
+                              },
+                            ),
+                          );
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
