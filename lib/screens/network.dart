@@ -17,7 +17,7 @@ class Network extends StatelessWidget {
               height: 200,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/image/ic.connection.png'))),
+                      image: AssetImage('assets/image/ic_connection.png'))),
             ),
             Container(
                 padding: const EdgeInsets.only(top: 5),
@@ -39,11 +39,11 @@ class Network extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 55,),
             // const SizedBox(height: 70, width: 314,),
             Container(
-              margin: const EdgeInsets.only(top: 300.0),
-              height: 70,
-              width: 314,
+              margin: const EdgeInsets.symmetric(horizontal: 50, vertical: 25),
+              height: 50,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30), color: Colors.red),
               child: const Center(
