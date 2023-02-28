@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
 
       ),
-      home:  ProfileScreen(),
+      home:  SplashScreen(),
     );
   }
 }

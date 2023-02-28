@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/menu_food/menu_food_screen.dart';
 
 import '../../utilities/button_widget.dart';
 
@@ -33,8 +33,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontSize: 15,
                             color: Colors.black26)),
                     TextFormField(
-                      style:
-                      const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 17),
                       decoration: const InputDecoration(
                         hintText: "E-mail",
                       ),
@@ -49,8 +49,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: Colors.black26)),
                     TextFormField(
                       obscureText: true,
-                      style:
-                      const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 17),
                       decoration: const InputDecoration(hintText: "Password"),
                     ),
                     const SizedBox(
@@ -71,7 +71,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Flexible(child: ButtonWidget(textTitle: "Login"))
+                        InkWell(
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return MenuFoodScreen();
+                              },
+                            ),
+                          ),
+                        ),
+                        Flexible(child: ButtonWidget(textTitle: "Login",))
                       ],
                     ),
                   ],

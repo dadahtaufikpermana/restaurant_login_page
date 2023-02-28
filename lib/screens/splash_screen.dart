@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/screens/loginPage/loginPage.dart';
+import 'package:restaurant_login_page/screens/loginPage/tab_controller.dart';
 import '../utilities/styleSchema.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -71,7 +73,7 @@ class SplashScreen extends StatelessWidget {
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return SplashScreen();
+                      return TabSlide();
                     },
                   ),
                 ),
