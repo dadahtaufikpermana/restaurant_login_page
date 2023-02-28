@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
 
-class History extends StatelessWidget {
-  const History({Key? key}) : super(key: key);
+class Orders extends StatelessWidget {
+  const Orders({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const BackButton(
-          color: Colors.black,
+        centerTitle: true,
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
         ),
         backgroundColor: Colors.white,
-        title: const Center(
-            child: Text(
-          "History",
+        title: const Text(
+          "Orders",
           style: TextStyle(
             color: Colors.black,
             fontSize: 18,
           ),
         )),
-      ),
       body: Center(
         child: Column(
           children: <Widget>[
@@ -31,12 +35,12 @@ class History extends StatelessWidget {
               height: 200,
               decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/image/ic_note.png'))),
+                      image: AssetImage('assets/image/ic_basket.png'))),
             ),
             Container(
                 padding: const EdgeInsets.only(top: 5),
                 child: const Text(
-                  "No History Yet",
+                  "No orders yet",
                   style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,

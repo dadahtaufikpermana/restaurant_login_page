@@ -7,8 +7,13 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const BackButton(
-          color: Colors.black,
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
         ),
         backgroundColor: Colors.white,
         title: Container(
@@ -54,20 +59,6 @@ class Search extends StatelessWidget {
               ),
             ),
             // const SizedBox(height: 70, width: 314,),
-            Container(
-              margin: const EdgeInsets.only(top: 200.0),
-              height: 70,
-              width: 314,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30), color: Colors.red),
-              child: const Center(
-                child: Text(
-                  "Start Ordering",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ),
-            )
           ],
         ),
       ),
