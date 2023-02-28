@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:restaurant_login_page/screens/home_screen.dart';
 
 import '../../utilities/button_widget.dart';
 import '../../utilities/fonts_widget.dart';
+import '../shrink_drawer_screen.dart';
 
 enum RadioButtonProfile { cardProfile, bankAccountProfile, paypalProfile }
 
@@ -293,9 +295,9 @@ class _ProfileChangeScreenState extends State<ProfileChangeScreen> {
                     const SizedBox(
                       height: 100,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 40),
-                      child: const ButtonWidget(textTitle: "Update"),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 40),
+                      child: ButtonWidget(textTitle: "Update", screens: HomeScreen(),),
                     )
                   ],
                 ),

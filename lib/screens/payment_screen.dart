@@ -92,7 +92,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   color: Color(0xFFF47B0A)),
-                              child: Image.asset('assets/card.png'),
+                              child: Image.asset('assets/icon/icon_card.png'),
                             ),
                             const SizedBox(
                               width: 10,
@@ -127,7 +127,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   color: Color(0xFFEB4796)),
-                              child: Image.asset('assets/bank.png'),
+                              child: Image.asset('assets/icon/icon_bank_account.png'),
                             ),
                             const SizedBox(
                               width: 10,

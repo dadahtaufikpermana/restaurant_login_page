@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_login_page/screens/payment_screen.dart';
+import 'package:restaurant_login_page/screens/profile/profile_screen.dart';
 
 import '../utilities/styleSchema.dart';
 
@@ -281,7 +282,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (context) {
-                                return PaymentScreen();
+                                return ProfileScreen();
                               },
                             ),
                           );

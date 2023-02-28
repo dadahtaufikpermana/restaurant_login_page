@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_login_page/screens/profile/profile_change_screen.dart';
 
 class Orders extends StatelessWidget {
   const Orders({Key? key}) : super(key: key);
@@ -58,17 +59,28 @@ class Orders extends StatelessWidget {
               ),
             ),
             // const SizedBox(height: 70, width: 314,),
-            Container(
-              margin: const EdgeInsets.only(top: 200.0),
-              height: 70,
-              width: 314,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30), color: Colors.red),
-              child: const Center(
-                child: Text(
-                  "Start Ordering",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+            InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ProfileChangeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Container(
+                margin: const EdgeInsets.only(top: 200.0),
+                height: 70,
+                width: 314,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30), color: Colors.red),
+                child: const Center(
+                  child: Text(
+                    "Start Ordering",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             )

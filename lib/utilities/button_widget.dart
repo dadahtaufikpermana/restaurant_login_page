@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
-  const ButtonWidget({super.key, required this.textTitle});
+  const ButtonWidget({super.key, required this.textTitle, required this.screens});
 
   final String textTitle;
+  final Widget screens;
 
   @override
   Widget build(BuildContext context) {

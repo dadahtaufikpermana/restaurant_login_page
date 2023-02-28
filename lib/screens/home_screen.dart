@@ -180,94 +180,120 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     Container(
                                       child: ListView(
+                                        padding: EdgeInsets.only(top: 40),
                                         scrollDirection: Axis.horizontal,
                                         children: [
+                                          FoodCard(
+                                              imageFood: "assets/image/ic_food1.png",
+                                              title: "Vegie tomato mix"),
+                                          SizedBox(
+                                            height: 20,
+                                            width: 20,
+                                          ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food3.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food4.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
-                                              title: "Vegie tomato mix"),
-                                          SizedBox(
-                                            width: 20,
-                                          ),
-                                          FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food5.png",
                                               title: "Vegie tomato mix"),
                                         ],
                                       ),
                                     ),
                                     Container(
                                       child: ListView(
+                                        padding: EdgeInsets.only(top: 40),
                                         scrollDirection: Axis.horizontal,
                                         children: [
+                                          FoodCard(
+                                              imageFood: "assets/image/ic_food1.png",
+                                              title: "Vegie tomato mix"),
+                                          SizedBox(
+                                            height: 20,
+                                            width: 20,
+                                          ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food3.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food4.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food5.png",
                                               title: "Vegie tomato mix"),
                                         ],
                                       ),
                                     ),
                                     Container(
                                       child: ListView(
+                                        padding: EdgeInsets.only(top: 40),
                                         scrollDirection: Axis.horizontal,
                                         children: [
+                                          FoodCard(
+                                              imageFood: "assets/image/ic_food1.png",
+                                              title: "Vegie tomato mix"),
+                                          SizedBox(
+                                            height: 20,
+                                            width: 20,
+                                          ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food3.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food4.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food5.png",
                                               title: "Vegie tomato mix"),
                                         ],
                                       ),
                                     ),
                                     Container(
                                       child: ListView(
+                                        padding: EdgeInsets.only(top: 40),
                                         scrollDirection: Axis.horizontal,
                                         children: [
+                                          FoodCard(
+                                              imageFood: "assets/image/ic_food1.png",
+                                              title: "Vegie tomato mix"),
+                                          SizedBox(
+                                            height: 20,
+                                            width: 20,
+                                          ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food3.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food4.png",
                                               title: "Vegie tomato mix"),
                                           SizedBox(
                                             width: 20,
                                           ),
                                           FoodCardWidget(
-                                              imageFood: "assets/image/food1.png",
+                                              imageFood: "assets/image/ic_food5.png",
                                               title: "Vegie tomato mix"),
                                         ],
                                       ),
